@@ -1,0 +1,161 @@
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "黃翌深",
+    "senderID": "100074565147887",
+    "msg": "Eyo?",
+    "time": "Saturday, December 9, 2023 2:06 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "@黃翌深",
+    "time": "Saturday, December 9, 2023 2:06 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "#include <Servo.h>\n#include <LiquidCrystal_I2C.h>\n#include <Keypad.h>\n#include <Password.h>\n#define buzzer 12\nServo servo;\nLiquidCrystal_I2C lcd(0x27, 16, 2);\nString newPasswordString;\nchar newPassword[6];\nbyte a = 5;\nbool value = true;\nPassword password = Password(\"222222\");\nbyte maxPasswordLength = 6;\nbyte currentPasswordLength = 0;\nconst byte ROWS = 4;\nconst byte COLS = 4;\nchar keys[ROWS][COLS] = {\n{'D', 'C', 'B', 'A'},\n{'#', '9', '6', '3'},\n{'0', '8', '5', '2'},\n{'*', '7', '4', '1'},\n};\nbyte rowPins[ROWS] = {2, 3, 4, 5};\nbyte colPins[COLS] = {6, 7, 8, 9};\nKeypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );\nvoid setup() {\nSerial.begin(9600);\npinMode(buzzer, OUTPUT);\nservo.attach(11);\nservo.write(160);\nlcd.init();\nlcd.backlight();\nlcd.setCursor(3, 0);\nlcd.print(\"WELCOME TO\");\nlcd.setCursor(3, 1);",
+    "time": "Saturday, December 9, 2023 2:06 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "ano meron dito",
+    "time": "Saturday, December 9, 2023 2:06 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "黃翌深",
+    "senderID": "100074565147887",
+    "msg": "Nung language yan?",
+    "time": "Saturday, December 9, 2023 2:07 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "di ko rin alam",
+    "time": "Saturday, December 9, 2023 2:07 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "黃翌深",
+    "senderID": "100074565147887",
+    "msg": "Ngayon ko lang nakita ganyang pattern eh",
+    "time": "Saturday, December 9, 2023 2:08 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "黃翌深",
+    "senderID": "100074565147887",
+    "msg": "Mostly kasi sa py at js muna ako",
+    "time": "Saturday, December 9, 2023 2:08 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "黃翌深",
+    "senderID": "100074565147887",
+    "msg": "Hindi pa ako nakaka explore ng iba pang languages other than those and c#",
+    "time": "Saturday, December 9, 2023 2:08 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "ohh",
+    "time": "Saturday, December 9, 2023 2:09 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "oks oks",
+    "time": "Saturday, December 9, 2023 2:09 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "$",
+    "time": "Saturday, December 9, 2023 4:20 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "No way buhay pa bot",
+    "time": "Saturday, December 9, 2023 4:20 AM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Rengie Roberto",
+    "senderID": "100038309051420",
+    "msg": "☁️",
+    "time": "Saturday, December 9, 2023 12:01 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "$say ilabyu",
+    "time": "Sunday, December 10, 2023 9:54 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Aleister Tempest",
+    "senderID": "100005599656436",
+    "msg": "$say dakog oten",
+    "time": "Sunday, December 10, 2023 9:55 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "$sim gabo",
+    "time": "Monday, December 11, 2023 7:05 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Aleister Tempest",
+    "senderID": "100005599656436",
+    "msg": "$say yamete kudasai ahh",
+    "time": "Monday, December 11, 2023 8:33 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Joefrey Marcus S. Omaña",
+    "senderID": "100069432632931",
+    "msg": "$",
+    "time": "Tuesday, December 12, 2023 7:55 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Yaato Alvarez",
+    "senderID": "100071754129315",
+    "msg": "$su",
+    "time": "Tuesday, December 12, 2023 8:30 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Jay D. Arce",
+    "senderID": "100061233235136",
+    "msg": "Wazzap niggas",
+    "time": "Tuesday, December 12, 2023 10:13 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Ryhon",
+    "senderID": "100059693095456",
+    "msg": "Say nigga",
+    "time": "Wednesday, December 13, 2023 10:37 PM"
+}
+{
+    "nameBox": "United Alliance Front",
+    "nameUser": "Aleister Tempest",
+    "senderID": "100005599656436",
+    "msg": "$say nigga",
+    "time": "Wednesday, December 13, 2023 10:51 PM"
+}

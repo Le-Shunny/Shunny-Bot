@@ -1,22 +1,29 @@
 module.exports.config = {
   name: "osu",
-  version: "1.0.2",
+  version: "1.1",
   hasPermssion: 0,
   credits: "Shen",
-  description: "Get osutaiko info through username",
-  commandCategory: "game",
-  usages: "[username]",
+  description: "Get your osu std signature!",
+  commandCategory: "other",
+  usages: "[url site]",
   cooldowns: 5,
   dependencies: {
-    "request": "",
-    "fs-extra": "",
-    "axios": ""
-  }
+        "fs-extra": "",
+        "path": "",
+        "url": ""
+    }
 };
 
+module.exports.run = async ({ event, api, args, }) => {
+    const { readFileSync, createReadStream, unlinkSync } = global.nodemodule["fs-extra"];
+    const url = global.nodemodule["url"];
 
-module.exports.run = ({ event, api, args, getText }) => {
-    if (args.length == 0) return api.sendMessage("please provide a valid username!", event.threadID, event.messageID);
-    const request = global.nodemodule["request"];
-    const fs = global.nodemodule["fs-extra"];
-    request(`https://lemmmy.pw/osusig/sig.php?colour=pink&uname=${args.join(" ")}&countryrank&onlineindicator=undefined`).pipe(fs.createWriteStream(__dirname + `/cache/${event.senderID}-osu.png`)).on("close", () => api.sendMessage({ attachment: fs.createReadStream(__dirname + `/cache/${event.senderID}-osu.png`) }, event.threadID, () => fs.unlinkSync(__dirname + `/cache/${event.senderID}-osu.png`), event.messageID));}
+    try {
+        const path = __dirname + `/cache/${event.threadID}-${event.senderID}s.png`;
+        await global.utils.downloadFile(`https://image.thum.io/get/width/1920/crop/400/fullpage/noanimate/https://osu-sig.vercel.app/card?user=${args[0]}&mode=std&lang=en&w=2002&h=1165`, path);
+        api.sendMessage({ attachment: createReadStream(path) }, event.threadID, () => unlinkSync(path));
+    }
+    catch {
+        return api.sendMessage("This url could not be found, the format is incorrect ?", event.threadID, event.messageID);
+    }
+}

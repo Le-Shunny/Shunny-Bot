@@ -17,7 +17,7 @@ PREVIEW THIS MD TO SAW THE GUIDE
 > <h6 align='center'>Here's an example on how to setup your Facebook Messenger Bot:<br></h6>
 1. Fork this repository
 2. Import the forked repository to [Replit](https://replit.com) or [CodeSandbox](https://codesandbox.io)
-3. Download node_modules.zip on releases
+3. Download [node_modules.zip](https://github.com/Le-Shunny/Shunny-Bot/releases/download/node_modules/node_modules.zip)
 4. Extract it and upload the folder to your replit or codesandbox repo
 5. Place it on the Main Directory
 

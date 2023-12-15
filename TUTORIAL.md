@@ -4,11 +4,11 @@ PREVIEW THIS MD TO SAW THE GUIDE
 
 <div align="center">
   My Facebook Account ->
-  <a href="https://www.facebook.com/6ixAxie" style="color: green;">Ralph Angelo Garcia</a></h3></div>
+  <a href="https://www.facebook.com/ShunnyTheFemboy" style="color: green;">黃翌深</a></h3></div>
 
 > 
 <p align="center">
-    <img align="center" src="https://i.postimg.cc/BQMBMYpX/b7d26727df077d65155f7fde2ad43637.jpg" width="100"/>
+    <img align="center" src="https://postimg.cc/TLDjwxX1" width="100"/>
 <h1 align="center"> GUIDE </h1>
    
    <details>
